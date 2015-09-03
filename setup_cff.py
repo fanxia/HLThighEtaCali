@@ -2736,23 +2736,7 @@ hltESPTTRHBuilderPixelOnly = cms.ESProducer( "TkTransientTrackingRecHitBuilderES
   PixelCPE = cms.string( "hltESPPixelCPEGeneric" ),
   ComponentName = cms.string( "hltESPTTRHBuilderPixelOnly" )
 )
-#
-hltESPTTRHBuilderWithoutAngle4PixelTriplets = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
-  StripCPE = cms.string( "Fake" ),
-  Matcher = cms.string( "StandardMatcher" ),
-  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
-  PixelCPE = cms.string( "hltESPPixelCPEGeneric" ),
-  ComponentName = cms.string( "hltESPTTRHBuilderWithoutAngle4PixelTriplets" )
-)
 
-hltESPTTRHBuilderAngleAndTemplate = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
-  StripCPE = cms.string( "hltESPStripCPEfromTrackAngle" ),
-  Matcher = cms.string( "StandardMatcher" ),
-  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
-  PixelCPE = cms.string( "hltESPPixelCPETemplateReco" ),
-  ComponentName = cms.string( "hltESPTTRHBuilderAngleAndTemplate" )
-)
-#
 hltESPTrackerRecoGeometryESProducer = cms.ESProducer( "TrackerRecoGeometryESProducer",
   appendToDataLabel = cms.string( "" ),
   trackerGeometryLabel = cms.untracked.string( "" )

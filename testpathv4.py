@@ -750,13 +750,14 @@ process.hltESPTrackCounting3D1st = cms.ESProducer( "TrackCountingESProducer",
   nthTrack = cms.int32( 1 ),
   useSignedImpactParameterSig = cms.bool( True )
 )
-process.hltESPTTRHBuilderWithoutAngle4PixelTriplets = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
-  StripCPE = cms.string( "Fake" ),
-  Matcher = cms.string( "StandardMatcher" ),
-  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
-  PixelCPE = cms.string( "hltESPPixelCPEGeneric" ),
-  ComponentName = cms.string( "hltESPTTRHBuilderWithoutAngle4PixelTriplets" )
-)
+
+#process.hltESPTTRHBuilderWithoutAngle4PixelTriplets = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
+#  StripCPE = cms.string( "Fake" ),
+#  Matcher = cms.string( "StandardMatcher" ),
+#  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
+#  PixelCPE = cms.string( "hltESPPixelCPEGeneric" ),
+#  ComponentName = cms.string( "hltESPTTRHBuilderWithoutAngle4PixelTriplets" )
+#)
 process.hltESPTTRHBuilderPixelOnly = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
   StripCPE = cms.string( "Fake" ),
   Matcher = cms.string( "StandardMatcher" ),
@@ -764,13 +765,13 @@ process.hltESPTTRHBuilderPixelOnly = cms.ESProducer( "TkTransientTrackingRecHitB
   PixelCPE = cms.string( "hltESPPixelCPEGeneric" ),
   ComponentName = cms.string( "hltESPTTRHBuilderPixelOnly" )
 )
-process.hltESPTTRHBuilderAngleAndTemplate = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
-  StripCPE = cms.string( "hltESPStripCPEfromTrackAngle" ),
-  Matcher = cms.string( "StandardMatcher" ),
-  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
-  PixelCPE = cms.string( "hltESPPixelCPETemplateReco" ),
-  ComponentName = cms.string( "hltESPTTRHBuilderAngleAndTemplate" )
-)
+#process.hltESPTTRHBuilderAngleAndTemplate = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
+#  StripCPE = cms.string( "hltESPStripCPEfromTrackAngle" ),
+#  Matcher = cms.string( "StandardMatcher" ),
+#  ComputeCoarseLocalPositionFromDisk = cms.bool( False ),
+#  PixelCPE = cms.string( "hltESPPixelCPETemplateReco" ),
+#  ComponentName = cms.string( "hltESPTTRHBuilderAngleAndTemplate" )
+#)
 process.hltESPTTRHBWithTrackAngle = cms.ESProducer( "TkTransientTrackingRecHitBuilderESProducer",
   StripCPE = cms.string( "hltESPStripCPEfromTrackAngle" ),
   Matcher = cms.string( "StandardMatcher" ),
